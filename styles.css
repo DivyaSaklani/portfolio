@@ -1,0 +1,39 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+body{
+    background: radial-gradient(rgb(227, 210, 251),rgb(209, 203, 246));
+    background-size:contain;
+    
+}
+header{
+   display:flex;
+   flex-direction: row; 
+  
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   background: radial-gradient(120deg,rgba(219, 212, 212, 0.769),rgba(166, 166, 202, 0.724));
+   
+}
+header h3{
+    font-size:35px ;
+    color:rgba(15, 14, 14, 0.944);
+    font-weight:600 ;
+    padding:22px 4px 13px 28px;
+    
+}
+nav ul{
+    font-size: larger;
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+    justify-content: space-between;
+    list-style: none;
+    padding:8% 2px;
+    
+
+}
