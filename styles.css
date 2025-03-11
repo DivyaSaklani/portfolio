@@ -5,35 +5,54 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
    
 }
-body{
-    background: radial-gradient(rgb(227, 210, 251),rgb(209, 203, 246));
-    background-size:contain;
+html , body{
+    background: linear-gradient(rgba(242, 245, 235, 0.669),rgba(245, 248, 226, 0.772));
+    background-size:cover;
+    height:100%;
+
     
 }
 header{
    display:flex;
    flex-direction: row; 
-  
+    padding:12px 10px;
    flex-wrap: nowrap;
    justify-content: space-between;
-   background: radial-gradient(120deg,rgba(219, 212, 212, 0.769),rgba(166, 166, 202, 0.724));
+   
+   
    
 }
 header h3{
     font-size:35px ;
     color:rgba(15, 14, 14, 0.944);
     font-weight:600 ;
-    padding:22px 4px 13px 28px;
+    padding:18px 14px;
     
 }
+nav{
+    background:linear-gradient(110deg ,rgba(210, 8, 8, 0.991),rgb(157, 4, 213));
+    border-radius:30px;
+    margin:12px 10px;
+    width:40%;
+    border-style: none;
+    align-self: center;
+    /* justify-content: center; */
+
+}
 nav ul{
-    font-size: larger;
+    
     display:flex;
     flex-direction: row;
-    gap:30px;
+
     justify-content: space-between;
     list-style: none;
-    padding:8% 2px;
+    padding: 10px 15px;
+    margin:3px;
+    background-color:white;
+    
+    border-radius:30px;
+    border-style: none;
+    align-content:center;
     
 
 }
