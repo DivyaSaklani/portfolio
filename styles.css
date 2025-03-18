@@ -6,25 +6,33 @@
    
 }
 html , body{
-    background: radial-gradient(rgba(253, 242, 255, 0.713),rgba(255, 246, 249, 0.925),rgba(245, 248, 226, 0.856));
-    background-size:cover;
+    background: radial-gradient(rgba(247, 255, 246, 0.925),rgba(245, 248, 226, 0.856),rgba(251, 242, 255, 0.713));
+    background-size:contain;
     height:100%;
 
     
 }
-header{
+header,#header2{
    display:flex;
    flex-direction: row; 
-   padding:3px 10px;
+   
 justify-content: space-between;
    width:100%;
    top:0;
    position: fixed;
-   background-color: rgba(211, 203, 203, 0.185);
-   box-shadow: 0px 3px 2px rgba(41, 20, 31, 0.451) ;
+  
+   
+   z-index: 1000; /* Ensures header stays above other elements */
+    transition: background-color 0.3s ease-in-out;
+    background-color:transparent; 
    
    
    
+}
+
+header.scrolled {
+    background:radial-gradient(rgb(247, 255, 246),rgb(245, 248, 226),rgb(251, 242, 255));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 header h3{
     font-size:35px ;
@@ -50,9 +58,9 @@ nav ul{
     
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
-    padding: 10px 15px;
+    padding: 7px 14px;
     margin:3px;
     background-color:white;
     
@@ -202,20 +210,100 @@ main{
     border-style: none;
     
 }
-#about{
-    margin-top:40px;
-}
-#about h2{
+
+.about h2{
     
-    font-size: 40px;
+    font-size: 30px;
    
-    margin:12px 2px;
+    margin:12px;
+    margin-top:-50px;
+    z-index: 1;
     
     
 }
-#about h2,h4{
+.about h2,h4{
     text-align:center;
     font-family: 'Times New Roman', Times, serif;
     
 
+}
+
+.abt{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* justify-self: center; */
+    
+
+}
+#abt-p{
+    margin:0px 200px;
+    padding-top:30px;
+   
+    text-align: center;
+    
+}
+
+#lottie-container{
+    position: relative;
+    padding:12px ;
+    margin-right:-25px;
+    width:550px;
+    height:550px;
+    margin-top:-20px;
+    
+
+}
+#abt-cards{
+    display:flex;
+    flex-direction:row;
+    margin:80px 100px;
+    justify-content: space-evenly;
+    gap:12px;
+
+    
+
+}
+
+.timeline {
+    position: relative;
+   
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background:linear-gradient(250deg,rgba(243, 7, 7, 0.733),rgba(108, 45, 243, 0.855));
+}
+.timeline-content {
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #b406f3;
+}
+.timeline-content p{
+    font-size: 14px;
+}
+.timeline-content h4{
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
+#education{
+    width:50%;
 }

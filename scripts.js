@@ -15,4 +15,28 @@ function  typeEffect(){
         },450);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("header");
+        
+        if (window.scrollY > 50) { 
+            navbar.classList.add("scrolled"); // Add border when scrolling
+        } else {
+            navbar.classList.remove("scrolled"); // Remove border when at top
+        }
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded",typeEffect); /* Ensures the effect starts after the html is loaded */
+
+document.addEventListener("DOMContentLoaded", function() {
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-container'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: './images/animation1.json',
+});
+});
