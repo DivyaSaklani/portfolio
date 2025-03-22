@@ -8,6 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="./tailwind.config.js"></script>
+        <!-- Bootstrap 5.3 CSS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header  id ="header">
@@ -15,8 +18,10 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 
                 <li><a href="#Skills">Skills</a></li>
+                <li><a href="#achieve">Achievements</a></li>
                 <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
@@ -27,8 +32,7 @@
                 <img src="/images/night-mode.png" alt="">
             </div>
             
-
-           <button><a href="About.html">About</a> <span class="con"><img src="images/up-right-arrow.png" alt="" ></span> </button> 
+ 
         </div>
        
         
@@ -37,20 +41,194 @@
     <main>
         <div id="home">
             <img src="" alt="">
-          <h2 id="typing-text"> </h2> 
+          <h2 id="typing-text" style="font-weight: 600;"> </h2> 
           <p>I'm a Final year B-tech student aspiring to be a Software Developer. Go through my portfolio website to know more</p>
           <div class="home-btn">
-            <button class="col-btn">Resume</button>
+            <button class="row-btn">Resume</button>
             <button style="border:1px solid rgb(0, 0, 0);">Contact me</button>
           </div>
 
         </div>
 
+        <div class="about">
+            
+            <h2 class="mainHead" style="margin-top:80px;" >About Me</h2>
+                <h4 class="subHead">Introduction</h4>
+        
+        <p id="abt-p">I'm an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilage of collaborating with prestigious organisations, contributing to their success and growth.</p>
+
+        <div class="abt">
+          
+              
+               <!--  <div id="abt-cards"> 
+                  
+                       
+                    <div class="card">
+                        <h3>Skills</h3>
+                    </div> 
+                </div> -->
+                <section id="education" class="container my-5">
+                    <h4 class="subHead">Education</h4>
+                    <div class="row">
+                        <div class="row-md-6 mx-3">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon  text-white">🎓</div>
+                                    <div class="timeline-content" style="width:600px">
+                                        <h4>Bachelor of Technology - CSE</h4>
+                                        <p><strong>Dev Bhoomi Uttarakhand University</strong>(2021 - 2025)</p>
+                                        
+                                        <p>GPA: 8.5 | Courses: Data Science, Web Dev</p>
+                                    </div>
+                                </div>
+                
+                                <div class="timeline-item">
+                                    <div class="timeline-icon  text-white">🏫</div>
+                                    <div class="timeline-content" style="width:600px">
+                                        <h4>Senior Secondary Education</h4>
+                                        <p><strong>Sri Chaitanya Pre University</strong> (2019 - 2021)</p>
+                                        <p>Percentage: 90% | Science Stream</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon  text-white">📖</div>
+                                    <div class="timeline-content" style="width:600px">
+                                        <h4>High School Education</h4>
+                                        <p><strong>Shanti Niketan School</strong> (2019 - 2021)</p>
+                                        <p>Percentage: 95% | Science Stream</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                
+
+            
+                
+            
+            
+                
+            <div id="lottie-container3" ></div>
+            
+        </div>
+    </div>
+
+
+
+        <div>
+            <h2 class="mt-10 mainHead">Skills</h2>
+            <h4 class="subHead">Technical Porficiency</h4>
+            <div id="co-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="skill-seg col">
+                            <h5>FrontEnd</h5>
+                            <ul class="skill-lists"> 
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap</li>                            
+                                <li>Tailwind</li>                            
+                                <li>React</li>                            
+    
+                            </ul>
+                        </div>
+                        <div class="skill-seg col">
+                            <h5>Backend</h5>
+                            <ul class="skill-lists"> 
+                                <li>Django</li>
+                                <li>SpringBoot</li>
+                               <!--  <li></li>
+                                <li>Bootstrap</li>                            
+                                <li>Tailwind</li>                            
+                                <li>React</li>     -->                        
+    
+                            </ul>
+                        </div>
+                    </div>
+                       
+                     <div class="row">
+                        <div class="skill-seg col">
+                            <h5>Database</h5>
+                            <ul class="skill-lists"> 
+                                <li>MySQL</li>
+                                <li>MongoDB</li>
+                               <!--  <li></li>
+                                <li>Bootstrap</li>                            
+                                <li>Tailwind</li>                            
+                                <li>React</li>     -->                        
+    
+                            </ul>
+                        </div>
+                        <div class="skill-seg col">
+                            <h5>Version Control</h5>
+                            <ul class="skill-lists"> 
+                                <li>Git</li>
+                                <li>Github</li>
+                               <!--  <li></li>
+                                <li>Bootstrap</li>                            
+                                <li>Tailwind</li>                            
+                                <li>React</li>     -->                        
+    
+                            </ul>
+                        </div>
+                     </div>   
+                       
+                      <div class="row">
+                        <div class="skill-seg col">
+                            <h5>Programming Languages</h5>
+                            <ul class="skill-lists"> 
+                                <li>Java</li>
+                                <li>Python</li>
+                               <!--  <li></li>
+                                <li>Bootstrap</li>                            
+                                <li>Tailwind</li>                            
+                                <li>React</li>     -->                        
+    
+                            </ul>
+                        </div>
+                        <div class="skill-seg col">
+                            <h5>UI/UX</h5>
+                            <ul class="skill-lists"> 
+                                <li>Figma</li>
+                                <li>Tkinter</li>
+                                <li>Java Fx</li>
+                               <!--  <li></li>
+                                <li>Bootstrap</li>                            
+                                <li>Tailwind</li>                            
+                                <li>React</li>     -->                        
+    
+                            </ul>
+                        </div>
+                      </div> 
+                       
+                       
+                    
+                    <div class="pie-container">
+                        <h4 class="ml-7">Areas of Expertise</h4>
+                        <div id="skill-chart">
+                            <div class="pie label-dev" >Web Dev</div>
+                            <div class="pie label-bend">Backend</div>
+                            <div class="pie label-Ui" >UI/UX</div>
+                            <div class="pie label-vc" >Virsion Control</div>
+                            <div class="pie label-pro" >Programming</div>
+                            <div class="pie label-db">Database</div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+        </div>
        
     </main>
     <footer></footer>
 
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
 
 

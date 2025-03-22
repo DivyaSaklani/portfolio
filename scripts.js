@@ -33,7 +33,16 @@ document.addEventListener("DOMContentLoaded",typeEffect); /* Ensures the effect 
 
 document.addEventListener("DOMContentLoaded", function() {
 var animation = lottie.loadAnimation({
-    container: document.getElementById('lottie-container'),
+    container: document.getElementById('lottie-container3'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: './images/animation3.json',
+});
+});
+document.addEventListener("DOMContentLoaded", function() {
+var animation2 = lottie.loadAnimation({
+    container: document.getElementById('lottie-container1'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
